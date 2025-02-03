@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    ...existing code...
+    // Add your existing code here
 
     function addReceipt(receipt) {
         receipts.push(receipt);
