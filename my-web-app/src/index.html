@@ -1,20 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List App</title>
+    <title>Digital Receipt Manager</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Todo List</h1>
-        <form id="todoForm">
-            <input type="text" id="todoInput" placeholder="Add a new task">
-            <button type="submit">Add</button>
+        <h1>Digital Receipt Manager</h1>
+        <form id="receiptForm">
+            <input type="date" id="receiptDate" required>
+            <input type="text" id="receiptDescription" placeholder="Description" required>
+            <input type="number" id="receiptAmount" placeholder="Amount" step="0.01" required>
+            <input type="file" id="receiptImage" accept="image/*" required>
+            <button type="submit">Add Receipt</button>
         </form>
-        <ul id="todoList"></ul>
+        <div id="totalAmount">Total: $0.00</div>
+        <ul id="receiptList"></ul>
+        <button id="exportButton">Export Monthly Report</button>
     </div>
     <script src="js/main.js"></script>
 </body>
