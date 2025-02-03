@@ -14,7 +14,12 @@
             <input type="text" id="receiptDescription" placeholder="Description" required>
             <input type="number" id="receiptAmount" placeholder="Amount (PKR)" step="0.01" required>
             <input type="file" id="receiptImage" accept="image/*">
+            <button type="submit" class="btn">Save Receipt</button>
         </form>
+        <div id="receiptList"></div>
+        <div id="totalAmount">Total: PKR 0.00</div>
+        <button id="exportButton" class="btn">Export to CSV</button>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
